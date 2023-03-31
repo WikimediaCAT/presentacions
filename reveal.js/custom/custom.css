@@ -1,0 +1,35 @@
+small.credit {
+  /* position: relative;
+  top: 24em; */
+  font-size: 0.3em;
+}
+
+.reveal h3 {
+  text-shadow: 3px 2px 0px #fefefe;
+}
+
+.left {
+  width: 50%;
+  float: left;
+}
+
+.right {
+  width: 50%;
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.w20 {
+  width: 20%;
+}
