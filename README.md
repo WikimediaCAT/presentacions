@@ -15,4 +15,4 @@ per:
 const port = yargs.argv.port || 8000
 const host = yargs.argv.host || 'localhost'
 ````
-Després podeu anar a http://http://localhost:8000 per veure les presentacions
+Després podeu anar a http://localhost:8000 per veure les presentacions
