@@ -1,6 +1,6 @@
 # presentacions
 
-Installar:
+Instal·lar:
 ```
 $ cd reveal.js && npm install
 $ npm start
