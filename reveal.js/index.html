@@ -10,6 +10,9 @@
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/white.css">
+	<link rel="stylesheet" href="plugin/pointer/pointer.css">
+	<link rel="stylesheet" href="plugin/drawer/drawer.css">
+
 	<link rel="stylesheet" href="custom/custom.css">
 
 	<!-- Theme used for syntax highlighted code -->
@@ -18,14 +21,18 @@
 
 <body>
 	<div class="reveal">
+		<div class="menubar">
+			<div class="slide-number"></div>
+			<ul class="menu"></ul>
+		</div>
+
 		<div class="slides">
-			<section>
+			<section data-name="Inici">
 				<h3>Presentacions d'Amical Wikimèdia</h3>
 
 				<div>
 					<div class="left w80">
-						<p><small><a href="instruccions.html">Instruccions per a talleristes</a></small></p>
-						<p><small><a href="desenvolupadors.html">Instruccions per a desenvolupadors</a></small></p>
+
 						<p><a href="viquipedia.html">Què és la Viquipèdia</a><br><small>Una introducció a la Viquipèdia</small></p>
 						<p><a href="#">Vols <strong>disposar</strong> d'un/a viquipedista resident?</a></p>
 						<p><a href="#">Vols <strong>ser</strong> un/a viquipedista resident?</a></p>
@@ -33,23 +40,77 @@
 					<div class="right w20"><a href="https://wikimedia.cat"><img src="custom/imatges/logo-trans.png"></a></div>
 				</div>
 			</section>
+
+			<section data-transition-speed="slow" data-name="Instruccions">
+				<h3>Instruccions</h3>
+				<p><a href="instruccions.html">Instruccions per a talleristes</a></p>
+				<p><a href="desenvolupadors.html">Instruccions per a desenvolupadors</a></p>
+				<aside class="notes">
+
+				</aside>
+			</section>
+
+			<!-- plantilla per a una diapo
+      <section data-transition-speed="slow" data-name="Inici">
+        <h3>Títol</h3>
+        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+    -->
+
+
 		</div>
 	</div>
 
 	<script src="dist/reveal.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
 	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/search/search.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/simplemenu/simplemenu.js"></script>
+	<script src="plugin/math/relativenumber/relativenumber.js"></script>
+	<script src="plugin/pointer/pointer.js"></script>
+	<script src="plugin/drawer/drawer.js"></script>
 	<script>
 		// More info about initialization & config:
 		// - https://revealjs.com/initialization/
 		// - https://revealjs.com/config/
 		Reveal.initialize({
+			controls: true,
+			progress: true,
+			// center: true,
 			hash: true,
+			slideNumber: 'c/t',
+			simplemenu: {
+				flat: true,
+				// barhtml: {
+				//   header: "<div class='menubar'><div class='slide-number'></div><ul class='menu'></ul><div>",
+				//   footer: ""
+				// }
+			},
+			pointer: {
+				key: "q", // key to enable pointer, default "q", not case-sensitive
+				color: "red", // color of a cursor, default "red" any valid CSS color
+				opacity: 0.8, // opacity of cursor, default 0.8
+				pointerSize: 20, // pointer size in px, default 12
+				alwaysVisible: false, // should pointer mode be always visible? default "false"
+				tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+			},
+			drawer: {
+				toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+				toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+				colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+				color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+				pathSize: 4, // (optional) path size in px, default 4
+			},
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
 		});
+
 	</script>
 </body>
 
