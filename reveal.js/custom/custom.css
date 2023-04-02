@@ -42,6 +42,9 @@ i {
   background:rgba(0,0,0,0.1);
 }
 
+.revealjs-drawer-menu {
+  background-color: rgb(208 206 206);
+}
 /*************************************************
 *                                                *
 * CSS for the Title-Footer plugin for Reveal.js  *

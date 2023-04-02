@@ -10,7 +10,10 @@
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
   <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
   <link rel="stylesheet" href="custom/custom.css">
+
 
   <!-- Theme used for syntax highlighted code -->
   <link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -235,7 +238,8 @@
         <p class="fragment">Un contingut referenciat</p>
         <p class="fragment">Saber treballar amb un editor de text</p>
         <aside class="notes">
-          Requisits personals per editar la viquipèdia. La intenció és fer entendre que cal molt poc per començar a editar la VP.
+          Requisits personals per editar la viquipèdia. La intenció és fer entendre que cal molt poc per començar a
+          editar la VP.
         </aside>
       </section>
 
@@ -246,7 +250,8 @@
         <p class="fragment">Corregir errors, ampliar o enriquir</p>
         <aside class="notes">
           Quelcom sobre el que haguem llegit i indiquem on ho hem llegit.
-          Podem canviar qualsevol contingut si és per millorar-lo: corregir errors, ampliar contingut o enriquir-lo amb visions complementàries
+          Podem canviar qualsevol contingut si és per millorar-lo: corregir errors, ampliar contingut o enriquir-lo amb
+          visions complementàries
         </aside>
       </section>
 
@@ -330,27 +335,48 @@
         </aside>
       </section>
 
-      <section data-transition-speed="slow">
-        <h3>Buscar ajuda</h3>
-        <div class="fragment">
-          <div class="left w50">
-            <p>Ajuda<br><small><a href="https://w.wiki/6WC6">https://w.wiki/6WC6</a></small></p>
+      <section>
+        <section data-transition-speed="slow">
+          <h3>Buscar ajuda</h3>
+          <div class="fragment">
+            <div class="left w50">
+              <p>Ajuda<br><small><a href="https://w.wiki/6WC6">https://w.wiki/6WC6</a></small></p>
+            </div>
+            <div class="right w50">
+              <img src="custom/imatges/ajuda.jpg">
+            </div>
           </div>
-          <div class="right w50">
-            <img src="custom/imatges/ajuda.jpg">
+          <div class="clear fragment">
+            <div class="left w50">
+              <p>Taverna<br><small><a href="https://w.wiki/6WC9">https://w.wiki/6WC9</a></small></p>
+            </div>
+            <div class="right w50">
+              <img src="custom/imatges/taverna.jpg">
+            </div>
           </div>
-        </div>
-        <div class="clear fragment">
-          <div class="left w50">
-            <p>Taverna<br><small><a href="https://w.wiki/6WC9">https://w.wiki/6WC9</a></small></p>
-          </div>
-          <div class="right w50">
-            <img src="custom/imatges/taverna.jpg">
-          </div>
-        </div>
-        <aside class="notes">
+          <aside class="notes">
 
-        </aside>
+          </aside>
+        </section>
+        <section data-transition-speed="slow">
+          <h3>Buscar ajuda</h3>
+          <div class="fragment">
+            <div class="left w50">
+              <p>Portal viquipedista<br><small><a href="https://w.wiki/6XNX">https://w.wiki/6XNX</a></small></p>
+            </div>
+            <div class="right w50">
+              <img src="custom/imatges/portal.jpg">
+            </div>
+          </div>
+          <div class="clear fragment">
+            <div>
+              <p>Mentorització<br><small><a href="https://w.wiki/34Uo">https://w.wiki/34Uo</a></small></p>
+            </div>
+          </div>
+          <aside class="notes">
+
+          </aside>
+        </section>
       </section>
 
       <section data-transition-speed="slow">
@@ -384,6 +410,8 @@
   <script src="plugin/highlight/highlight.js"></script>
   <script src="plugin/simplemenu/simplemenu.js"></script>
   <script src="plugin/math/relativenumber/relativenumber.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
   <script>
 
     // Also available as an ES module, see:
@@ -401,9 +429,23 @@
         //   footer: ""
         // }
       },
-
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber]
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
     });
 
   </script>

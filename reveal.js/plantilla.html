@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="dist/reset.css">
   <link rel="stylesheet" href="dist/reveal.css">
   <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
   <link rel="stylesheet" href="custom/custom.css">
 
   <!-- Theme used for syntax highlighted code -->
@@ -60,6 +62,8 @@
   <script src="plugin/highlight/highlight.js"></script>
   <script src="plugin/simplemenu/simplemenu.js"></script>
   <script src="plugin/math/relativenumber/relativenumber.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
   <script>
 
     // Also available as an ES module, see:
@@ -77,9 +81,24 @@
         //   footer: ""
         // }
       },
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
 
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber]
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
     });
 
   </script>
