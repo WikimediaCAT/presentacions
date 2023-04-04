@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Com editar la Viquipèdia</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="menubar">
+      <div class="slide-number"></div>
+      <ul class="menu"></ul>
+    </div>
+    <div class="slides">
+
+      <section data-transition-speed="slow" data-name="Inici">
+        <h3>Com editar la Viquipèdia</h3>
+        <a href="https://viquipedia.cat"><img src="custom/imatges/viquipedia.png"></a>
+        <aside class="notes">
+          Idealment, abans de fer aquesta presentació, hauríem de fer la presentació d'introducció a la Viquipèdia. Les dues primeres dispositives són el recordatori mínim de les normes que cal tenir present a l'hora d'editar la VP.
+        </aside>
+      </section>
+
+      <section data-transition-speed="slow" data-name="Regles">
+        <h3>Regles del joc</h3>
+        <p class="fragment"><strike>Creació de coneixement</strike> vs. <strong>difusió del
+            coneixement</strong><br><small><a href="https://w.wiki/6W5K">https://w.wiki/6W5K</a></small></p>
+        <p class="fragment"><strike>Autentificar veracitat</strike> vs. <strong>verificar
+            autenticitat</strong><br><small><a href="https://w.wiki/6W5L">https://w.wiki/6W5L</a></small></p>
+        <p class="fragment"><strike>Objectivitat</strike> vs. <strong>neutralitat</strong><br><small><a
+              href="https://w.wiki/6W5N">https://w.wiki/6W5N</a></small></p>
+        <p class="fragment"><strike>Continguts privatius</strike> vs. <strong>continguts lliures</strong><br><small><a
+              href="https://w.wiki/6W5k">https://w.wiki/6W5k</a></small></p>
+
+      </section>
+
+      <section data-transition-speed="slow">
+        <h3>Referències</h3>
+        <p class="fragment">Fonts primàries<br><small><a href="https://w.wiki/6W5q">https://w.wiki/6W5q</a></small></p>
+        <p class="fragment">Fonts secundàries<br><small><a href="https://w.wiki/6W5r">https://w.wiki/6W5r</a></small>
+        </p>
+        <p class="fragment">Fonts fiables<br><small><a href="https://w.wiki/6W5v">https://w.wiki/6W5v</a></small></p>
+        <aside class="notes">
+          Explicar la importància de les referències, els diferents tipus de fonts (primàries i secundàries) i quines
+          fonts són fiables i quines no.
+        </aside>
+      </section>
+
+      <section data-transition-speed="slow">
+        <h3>Creció d'un usuari</h3>
+        <video controls width="80%"
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c8/1_Viquip%C3%A8dia._Crear_un_compte_d%27usuari.webm"></video>
+        <small><a href="https://w.wiki/6W63">https://w.wiki/6W63</a></small>
+        <aside class="notes">
+          Explicar que hi ha altres vídeos d'un minut sobre diferents aspectes de l'edició a la Viquipèdia que poden ser
+          molt útils per començar.
+        </aside>
+      </section>
+
+
+      <section data-transition-speed="slow" data-name="Inici">
+        <h3>Títol</h3>
+        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+
+
+      <section data-transition-speed="slow">
+        <h3>Moltes gràcies!</h3>
+        <a href="https://wikimedia.cat"><img src="custom/imatges/logo-trans.png"></a>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <!-- plantilla per a una diapo
+      <section data-transition-speed="slow" data-name="Inici">
+        <h3>Títol</h3>
+        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+    -->
+    </div>
+    <footer id="title-footer">
+      <a href="index.html">Índex presentacions</a>
+    </footer>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/simplemenu/simplemenu.js"></script>
+  <script src="plugin/math/relativenumber/relativenumber.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      // center: true,
+      hash: true,
+      slideNumber: 'c/t',
+      simplemenu: {
+        flat: true,
+        // barhtml: {
+        //   header: "<div class='menubar'><div class='slide-number'></div><ul class='menu'></ul><div>",
+        //   footer: ""
+        // }
+      },
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+</body>
+
+</html>
