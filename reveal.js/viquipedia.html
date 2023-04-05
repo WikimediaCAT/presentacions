@@ -21,10 +21,6 @@
 
 <body>
   <div class="reveal">
-    <div class="menubar">
-      <div class="slide-number"></div>
-      <ul class="menu"></ul>
-    </div>
     <div class="slides">
 
       <section data-transition-speed="slow" data-name="Inici">
@@ -256,7 +252,7 @@
       </section>
 
       <section data-transition-speed="slow">
-        <h3>Creció d'un usuari</h3>
+        <h3>Creació d'un usuari</h3>
         <video controls width="80%"
           src="https://upload.wikimedia.org/wikipedia/commons/c/c8/1_Viquip%C3%A8dia._Crear_un_compte_d%27usuari.webm"></video>
         <small><a href="https://w.wiki/6W63">https://w.wiki/6W63</a></small>
@@ -423,8 +419,7 @@
   <script src="plugin/search/search.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
-  <script src="plugin/simplemenu/simplemenu.js"></script>
-  <script src="plugin/math/relativenumber/relativenumber.js"></script>
+  <script src="plugin/menu/menu.js"></script>
   <script src="plugin/pointer/pointer.js"></script>
   <script src="plugin/drawer/drawer.js"></script>
   <script>
@@ -435,16 +430,8 @@
       pdfSeparateFragments: false,
       controls: true,
       progress: true,
-      // center: true,
       hash: true,
       slideNumber: 'c/t',
-      simplemenu: {
-        flat: true,
-        // barhtml: {
-        //   header: "<div class='menubar'><div class='slide-number'></div><ul class='menu'></ul><div>",
-        //   footer: ""
-        // }
-      },
       pointer: {
         key: "q", // key to enable pointer, default "q", not case-sensitive
         color: "red", // color of a cursor, default "red" any valid CSS color
@@ -460,8 +447,30 @@
         color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
         pathSize: 4, // (optional) path size in px, default 4
       },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
     });
 
   </script>

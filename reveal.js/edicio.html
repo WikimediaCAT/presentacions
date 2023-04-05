@@ -20,17 +20,19 @@
 
 <body>
   <div class="reveal">
-    <div class="menubar">
+    <!-- <div class="menubar">
       <div class="slide-number"></div>
       <ul class="menu"></ul>
-    </div>
+    </div> -->
     <div class="slides">
 
       <section data-transition-speed="slow" data-name="Inici">
         <h3>Com editar la Viquipèdia</h3>
         <a href="https://viquipedia.cat"><img src="custom/imatges/viquipedia.png"></a>
         <aside class="notes">
-          Idealment, abans de fer aquesta presentació, hauríem de fer la presentació d'introducció a la Viquipèdia. Les dues primeres dispositives són el recordatori mínim de les normes que cal tenir present a l'hora d'editar la VP.
+          Idealment, abans de fer aquesta presentació, hauríem de fer la presentació d'introducció a la Viquipèdia. Les
+          dues primeres dispositives són el recordatori mínim de les normes que cal tenir present a l'hora d'editar la
+          VP.
         </aside>
       </section>
 
@@ -59,14 +61,47 @@
         </aside>
       </section>
 
-      <section data-transition-speed="slow">
-        <h3>Creció d'un usuari</h3>
-        <video controls width="80%"
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c8/1_Viquip%C3%A8dia._Crear_un_compte_d%27usuari.webm"></video>
-        <small><a href="https://w.wiki/6W63">https://w.wiki/6W63</a></small>
+      <section>
+        <section data-transition-speed="slow" data-auto-animate>
+          <h3>Creació d'un usuari</h3>
+          <video controls width="80%"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c8/1_Viquip%C3%A8dia._Crear_un_compte_d%27usuari.webm"></video>
+          <small><a href="https://w.wiki/6W63">https://w.wiki/6W63</a></small>
+          <aside class="notes">
+            Explicar que hi ha altres vídeos d'un minut sobre diferents aspectes de l'edició a la Viquipèdia que poden
+            ser molt útils per començar.
+          </aside>
+        </section>
+        <section data-transition-speed="slow" data-auto-animate>
+          <h3>Creació d'un usuari</h3>
+          <p>Confirmar email</p>
+          <img src="/custom/imatges/confirmar-correu.jpg" class="fragment">
+          <p class="fragment">També rebreu un correu de confirmació.</p>
+          <aside class="notes">
+            Cal confirmar l'adreça de correu electrònic, perquè si oblidem la contrasenya no la podrem recuperar i
+            haurem de crear-nos un altre usuari. No hi ha manera de recuperar la contrasenya d'un usuari que no ha
+            confirmat el correu electrònic.
+          </aside>
+        </section>
+      </section>
+
+      <section data-transition-speed="slow" data-background-image="/custom/imatges/espai-progres-temes.jpg"
+        data-background-opacity="0.1">
+        <h3>Espai de progrés</h3>
+        <p class="fragment">Triar temes a editar</p>
         <aside class="notes">
-          Explicar que hi ha altres vídeos d'un minut sobre diferents aspectes de l'edició a la Viquipèdia que poden ser
-          molt útils per començar.
+
+        </aside>
+      </section>
+
+      <section data-transition-speed="slow" data-name="1ª pàgina">
+        <h3>Pàgina d'usuari</h3>
+        <p class="fragment">Qui som<br><small><a href="https://w.wiki/6YCt">https://w.wiki/6YCt</a></small></p>
+        <p class="fragment">Usuari corporatiu<br><small><a href="https://w.wiki/6YCa">https://w.wiki/6YCa</a></small>
+        </p>
+        <aside class="notes">
+          Usarem la pàgina d'usuari per aprendre les funcions més importants de l'editor visual. Comencem per explicar
+          qui som en un paràgraf senzill.
         </aside>
       </section>
 
@@ -74,14 +109,26 @@
       <section data-transition-speed="slow" data-name="Plantilles">
         <h3>Ús de plantilles</h3>
         <p class="fragment">Editant<br><small><a href="https://w.wiki/6Y4n">https://w.wiki/6Y4n</a></small></p>
+        <p class="fragment">Usuari corporatiu<br><small><a href="https://w.wiki/6YCa">https://w.wiki/6YCa</a></small>
+        </p>
         <aside class="notes">
 
         </aside>
       </section>
 
-      <section data-transition-speed="slow" data-name="Plantilles">
+      <section data-transition-speed="slow" data-name="Editor visual">
+        <h3>Editor visual</h3>
+        <p class="fragment">Afegir categoria més específica<br><small><a
+              href="https://w.wiki/6Y67">https://w.wiki/6Y67</a></small></p>
+        <aside class="notes">
+          Anem a provar les opcions més habituals de l'editor visual
+        </aside>
+      </section>
+
+      <section data-transition-speed="slow" data-name="Categorització">
         <h3>Categorització</h3>
-        <p class="fragment">Afegir categoria més específica<br><small><a href="https://w.wiki/6Y67">https://w.wiki/6Y67</a></small></p>
+        <p class="fragment">Afegir categoria més específica<br><small><a
+              href="https://w.wiki/6Y67">https://w.wiki/6Y67</a></small></p>
         <aside class="notes">
 
         </aside>
@@ -118,8 +165,7 @@
   <script src="plugin/search/search.js"></script>
   <script src="plugin/markdown/markdown.js"></script>
   <script src="plugin/highlight/highlight.js"></script>
-  <script src="plugin/simplemenu/simplemenu.js"></script>
-  <script src="plugin/math/relativenumber/relativenumber.js"></script>
+  <script src="plugin/menu/menu.js"></script>
   <script src="plugin/pointer/pointer.js"></script>
   <script src="plugin/drawer/drawer.js"></script>
   <script>
@@ -130,16 +176,8 @@
       pdfSeparateFragments: false,
       controls: true,
       progress: true,
-      // center: true,
       hash: true,
       slideNumber: 'c/t',
-      simplemenu: {
-        flat: true,
-        // barhtml: {
-        //   header: "<div class='menubar'><div class='slide-number'></div><ul class='menu'></ul><div>",
-        //   footer: ""
-        // }
-      },
       pointer: {
         key: "q", // key to enable pointer, default "q", not case-sensitive
         color: "red", // color of a cursor, default "red" any valid CSS color
@@ -155,9 +193,30 @@
         color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
         pathSize: 4, // (optional) path size in px, default 4
       },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
 
       // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, Simplemenu, RelativeNumber, RevealPointer, RevealDrawer]
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
     });
 
   </script>
