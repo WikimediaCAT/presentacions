@@ -163,16 +163,34 @@
       </section>
 
       <section>
-        <section data-name="1ª pàgina">
+        <section data-menu-title="1a pàgina">
           <h3>Primera pàgina</h3>
-          <p class="fragment">
+          <p class="fragment" data-fragment-index="0">
             Qui som<br /><small>
               <a href="https://w.wiki/6YCt">Especial:Pàgina
                 personal</a>
             </small>
           </p>
-          <img src="/custom/imatges/benvinguda-3.jpg" alt="" class="fragment" />
-
+          <div class="r-stack">
+            <div class="fragment" data-fragment-index="1">
+              <div class="fragment fade-out" data-fragment-index="2">
+                <img src="/custom/imatges/editor-visual-1.jpg" />
+              </div>
+            </div>
+            <div class="fragment" data-fragment-index="2">
+              <div class="fragment fade-out" data-fragment-index="3">
+                <img src="/custom/imatges/editor-visual-2.jpg" />
+              </div>
+            </div>
+            <div class="fragment" data-fragment-index="3">
+              <div class="fragment fade-out" data-fragment-index="4">
+                <img src="/custom/imatges/editor-visual-3.jpg" />
+              </div>
+            </div>
+            <div class="fragment" data-fragment-index="4">
+              <img src="/custom/imatges/editor-visual-4.jpg" />
+            </div>
+          </div>
           <aside class="notes">
             Usarem la pàgina d'usuari per aprendre les
             funcions més importants
@@ -181,10 +199,7 @@
             senzill.
           </aside>
         </section>
-        <section>
-          <img src="/custom/imatges/editor-visual-1.jpg" alt="" />
-          <aside class="notes"></aside>
-        </section>
+
       </section>
 
       <section>
@@ -290,7 +305,7 @@
       <section>
         <section data-menu-title="Encapçalaments">
           <h3>Encapçalaments</h3>
-          <div class="r-stack">
+          <div class="r-stack stretch">
             <img src="/custom/imatges/encapcalament-1.jpg" class="fragment fade-out" data-fragment-index="0" />
             <img src="/custom/imatges/encapcalament-2.jpg" class="fragment current-visible" data-fragment-index="0" />
             <img src="/custom/imatges/encapcalament-3.jpg" class="fragment" />
@@ -308,9 +323,9 @@
             Paràgraf inicial<br /><small>Paràgraf</small>
           </p>
           <p class="fragment">
-            Seccions<br /><small>Encapçalament [+
-              Encapçalament de nivel x]</small>
+            Seccions<br /><small>Encapçalament [+ Encapçalament de nivel x]</small>
           </p>
+          <p class="fragment"><small><a href="https://w.wiki/6cXx">exemple</a></small></p>
           <aside class="notes"></aside>
         </section>
 
@@ -528,8 +543,7 @@
           </div>
         </section>
 
-        <section data-menu-title="Reutilització de
-                            referències">
+        <section data-menu-title="Reutilització de referències">
           <h3>Reutilització de referències</h3>
           <div class="r-stack">
             <div class="fragment" data-fragment-index="0">
@@ -570,7 +584,7 @@
         </section>
       </section>
 
-      <section data-menu-title="Inici">
+      <section data-menu-title="Buscar un model">
         <h3>Buscar un model</h3>
         <p class="fragment">
           Llistat d'articles de qualitat<br /><small><a href="https://w.wiki/Pyr">Viquipèdia:Articles de
@@ -724,22 +738,32 @@
               <p class="fragment" data-fragment-index="0">Viquipèdia</p>
               <div class="r-stack">
                 <div class="fragment" data-fragment-index="0">
-                  <div class="fragment fade-out" data-fragment-index="4">
+                  <div class="fragment fade-out" data-fragment-index="2">
                     <img src="/custom/imatges/wikidata-1.jpg">
                   </div>
                 </div>
-                <img src="/custom/imatges/wikidata-3.jpg" class="fragment" data-fragment-index="4">
+                <div class="fragment" data-fragment-index="2">
+                  <div class="fragment fade-out" data-fragment-index="4">
+                    <img src="/custom/imatges/wikidata-3.jpg">
+                  </div>
+                </div>
+                <p class="fragment" data-fragment-index="4">Usuari: persona</p>
               </div>
             </div>
             <div class="w50 right">
-              <p class="fragment" data-fragment-index="2">WikiData</p>
+              <p class="fragment" data-fragment-index="1">WikiData</p>
               <div class="r-stack">
-                <div class="fragment" data-fragment-index="2">
-                  <div class="fragment fade-out" data-fragment-index="5">
+                <div class="fragment" data-fragment-index="1">
+                  <div class="fragment fade-out" data-fragment-index="3">
                     <img src="/custom/imatges/wikidata-2.jpg">
                   </div>
                 </div>
-                <img src="/custom/imatges/wikidata-4.jpg" class="fragment" data-fragment-index="5">
+                <div class="fragment" data-fragment-index="3">
+                  <div class="fragment fade-out" data-fragment-index="5">
+                    <img src="/custom/imatges/wikidata-4.jpg">
+                  </div>
+                </div>
+                <p class="fragment" data-fragment-index="5">Usuari: ordinador</p>
               </div>
             </div>
           </div>
@@ -767,9 +791,37 @@
         </section>
       </section>
 
-      <section data-menu-title="Imatges">
-        <h3>Imatges</h3>
-        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+      <section data-menu-title="Commons">
+        <h3>Commons</h3>
+        <div class="r-stack">
+          <div class="fragment" data-fragment-index="0">
+            <div class="fragment fade-out" data-fragment-index="1">
+              <p>Imatges, vídeo i àudio<br><small><a
+                    href="https://commons.wikimedia.org/">commons.wikimedia.org</a></small></p>
+            </div>
+          </div>
+          <div class="fragment" data-fragment-index="1">
+            <div class="fragment fade-out" data-fragment-index="2">
+              <img src="/custom/imatges/commons-1.jpg">
+            </div>
+          </div>
+          <div class="fragment" data-fragment-index="2">
+            <div class="fragment fade-out" data-fragment-index="3">
+              <img src="/custom/imatges/commons-2.jpg">
+            </div>
+          </div>
+          <div class="fragment" data-fragment-index="3">
+            <div class="fragment fade-out" data-fragment-index="4">
+              <img src="/custom/imatges/commons-3.jpg">
+            </div>
+          </div>
+          <div>
+            <p class="fragment" data-fragment-index="4">Podeu carregar:</p>
+            <p class="fragment">Treballs <strong>originals</strong> vostres</p>
+            <p class="fragment">Treballs que en tingueu permís</p>
+          </div>
+        </div>
+
         <aside class="notes">
 
         </aside>
@@ -815,7 +867,7 @@
       controls: true,
       progress: true,
       hash: true,
-      slideNumber: "c/t",
+      //slideNumber: "h.v",
       transitionSpeed: "slow",
       pointer: {
         key: "q", // key to enable pointer, default "q", not case-sensitive
