@@ -22,20 +22,20 @@
   <div class="reveal">
     <div class="slides">
 
-      <section data-transition-speed="slow" data-name="Inici">
+      <section data-name="Inici">
         <h3>Instruccions per a desenvolupadors</h3>
       </section>
 
-      <section data-transition-speed="slow">
+      <section>
         <h3>Revealjs</h3>
-        <p class="fragment">Aquestes presentacions estan fetes amb <a href="https://revealjs.com/">Revealjs</a>.</p>
-        <p class="fragment">Vegeu-ne una demo a <a href="demo.html">aquí</a>.</p>
+        <p class="fragment">Aquestes presentacions estan fetes amb <a href="https://revealjs.com/" target="_blank">Revealjs</a>.</p>
+        <p class="fragment">Vegeu-ne una demo a <a href="demo.html" target="_blank">aquí</a>.</p>
         <aside class="notes">
 
         </aside>
       </section>
 
-      <section data-transition-speed="slow" data-name="Requisits">
+      <section data-name="Requisits">
         <h3>Requisits</h3>
         <p class="fragment"><a href="https://nodejs.org/" target="_blank">Node js v.16+</a></p>
         <p class="fragment"><a href="https://git-scm.com/" target="_blank">Git</a></p>
@@ -45,7 +45,7 @@
         </aside>
       </section>
 
-      <section data-transition-speed="slow" data-name="Instal·lació">
+      <section data-name="Instal·lació">
         <h3>Instal·lació</h3>
         <p class="fragment"><a
           href="https://github.com/WikimediaCAT/presentacions/fork" target="_blank">Feu una derivació del codi</a> al vostre compte de github.</p>
@@ -56,7 +56,7 @@
         </aside>
       </section>
 
-      <section data-transition-speed="slow" data-name="Contribució">
+      <section data-name="Contribució">
         <h3>Contribució</h3>
         <p class="fragment">Feu <a href="https://support.github.com/features/pull-requests" target="_blank">Pull
             requests</a> per contribuir els vostres canvis.</p>
@@ -67,16 +67,16 @@
       </section>
 
 
-      <section data-transition-speed="slow">
+      <section>
         <h3>Moltes gràcies!</h3>
-        <a href="https://wikimedia.cat"><img src="custom/imatges/logo-trans.png"></a>
+        <a href="https://wikimedia.cat" target="_blank"><img src="custom/imatges/logo-trans.png"></a>
         <aside class="notes">
 
         </aside>
       </section>
 
       <!-- plantilla per a una diapo
-      <section data-transition-speed="slow" data-name="Inici">
+      <section data-name="Inici">
         <h3>Títol</h3>
         <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
         <aside class="notes">
@@ -108,7 +108,8 @@
       controls: true,
       progress: true,
       hash: true,
-      slideNumber: 'c/t',
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
       pointer: {
         key: "q", // key to enable pointer, default "q", not case-sensitive
         color: "red", // color of a cursor, default "red" any valid CSS color
