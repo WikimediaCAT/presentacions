@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Títol de la presentació</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/white.css">
+  <link rel="stylesheet" href="plugin/pointer/pointer.css">
+  <link rel="stylesheet" href="plugin/drawer/drawer.css">
+  <link rel="stylesheet" href="custom/custom.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-menu-title="Home">
+        <h3>Language bias on Google searches</h3>
+        <p><small>A presentation by</small></p>
+        <a href="https://wikimedia.cat" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Amical_Wikimedia_logo_-_variant_1.svg"
+            alt="Amical logo" style="height: 4em;" class="demo-logo">
+        </a>
+        <aside class="notes">
+          Welcome to this presentation and thank you for coming.
+        </aside>
+      </section>
+
+      <section>
+        <section data-menu-title="What are we talking about?" data-auto-animate>
+          <h3>What are we talking about?</h3>
+          <p class="fragment">OS,</p>
+          <p class="fragment">Browser,</p>
+          <p class="fragment">Google search settings: Catalan</p>
+
+          <aside class="notes">
+            Let us begin by explaining what we mean when talking about language bias on Google searches.<br>
+
+            What we mean is that despite Operative System, Browser or Google search settings are set to Catalan…
+
+          </aside>
+        </section>
+        <section data-menu-title="1st result" data-auto-animate>
+          <h3>What are we talking about?</h3>
+          <p class="fragment">First organic result: Spanish</p>
+          <img src="/custom/imatges/bias-3-2.jpg" class="fragment">
+          <aside class="notes">
+            …the first organic result of a Google search is in Spanish, even if the returned web page, which is a
+            multilingual site, has a version in Catalan, as it is in this case.
+          </aside>
+        </section>
+        <section data-menu-title="Next results" data-auto-animate>
+          <h3>What are we talking about?</h3>
+          <p class="fragment">Next results: Spanish</p>
+          <img src="/custom/imatges/bias-4-2.jpg" class="fragment">
+          <aside class="notes">
+            But wait, no just the first result is in Spanish, but also the next ones.<br><br> In this case, the second
+            organic result is the Barcelona's town hall website, which also has a Catalan version shown here as
+            subordinated to the Spanish by indentation (why not the other way around?).<br><br>
+            The fourth result is the Wikipedia page for the city of Barcelona, as well in Spanish, where there is, of
+            course, the corresponding article in the Catalan Wikipedia.
+          </aside>
+        </section>
+        <section data-menu-title="Translated en.wiki" data-auto-animate>
+          <h3>What are we talking about?</h3>
+          <p class="fragment">En.wiki translated into Catalan</p>
+          <img src="/custom/imatges/bias-6.jpg" class="fragment">
+          <aside class="notes">
+            That's not all: the lateral widget, which normally shows a Wikipedia result, is showing here the translation
+            (into Catalan, at least) of the English Wikipedia, as if there was no Catalan Wikipedia page for the city of
+            Eivissa.<br><br>I have to say that this particular case seems to be resolved, as I couldn't find this
+            translated widget any more since a few weeks ago.
+          </aside>
+        </section>
+        <section data-menu-title="Wrong advice" data-auto-animate>
+          <h3>What are we talking about?</h3>
+          <p class="fragment">Wrong advice</p>
+          <img src="/custom/imatges/bias-1-2.jpg" class="fragment">
+          <aside class="notes">
+            Finally, in some searches, Google is still showing a wrong advice on setting Catalan as the language for
+            searches, which is, actually, already set.
+          </aside>
+        </section>
+      </section>
+
+      <section>
+        <section data-menu-title="When did this start?" data-auto-animate>
+          <h3>When did this start?</h3>
+          <p class="fragment">Sometime mid-2022</p>
+          <img src="/custom/imatges/bias-8-2.jpg" class="fragment">
+          <aside class="notes">
+            When did all this start?<br><br>It seems that this problem began sometime mid-2022. But it wasn't until the
+            end of the year that some users started to complain massively on social networks…
+          </aside>
+        </section>
+
+        <section data-menu-title="When did this start?" data-auto-animate>
+          <h3>When did this start?</h3>
+          <img src="/custom/imatges/bias-8-3.jpg" class="r-stretch">
+          <aside class="notes">
+            …as well as Google showed to be aware of it.<br><br>This is, actually, the Google's answer to that
+            particular tweet I showed you before. They didn't know what was going on, in fact.
+          </aside>
+        </section>
+
+        <section data-menu-title="May 2022 core update" data-auto-animate>
+          <h3>May 2022 core update</h3>
+          <img src="/custom/imatges/bias-12.jpg" class="r-stretch">
+          <aside class="notes">
+            What we know is that Google applied a Core update for Google Search on May 2022, which is consistent with
+            the consequences we found for Catalan Wikipedia.
+          </aside>
+        </section>
+
+        <!--
+          TODO: imatge dels canvis d'algorisme que va penjar l'Hinojo?
+        -->
+      </section>
+
+
+
+      <section>
+        <section data-menu-title="Consequences for WP - ca" data-auto-animate>
+          <h3>Consequences for WP</h3>
+          <div class="fragment">
+            <p>Catalan WP</p>
+            <img src="/custom/imatges/bias-ca.jpg" style="height:7em;">
+            <small>Difference in visits from Google to Wikipedia in Catalan for the period March 2022-February 2023,
+              compared to the previous year. It only includes visits from Spain.<br>
+              <a href="https://ja.cat/42hXA" target="_blank">source</a>
+            </small>
+          </div>
+          <aside class="notes">
+            What are the consequences for Wikipedia projects?<br><br>
+
+            In our case, it is quite clear that the Catalan Wikipedia is loosing transit in favour of the Spanish
+            Wikipedia.<br><br>
+
+            You can see here the downfall on organic transit from Google in 2022, month by month starting in March,
+            compared to 2021 for the Catalan Wikipedia. There is a big fall in April 2022 and a steady fall from May
+            onwards. Note that this graph only includes transit originated in Spain, as it seems that the geographic
+            location of the user seems to have some kind of effect on this bias.
+          </aside>
+        </section>
+        <section data-menu-title="Consequences for WP - es" data-auto-animate>
+          <h3>Consequences for WP</h3>
+          <p>Spanish WP</p>
+          <img src="/custom/imatges/bias-es.jpg" style="height:7em;">
+          <small>Difference in visits from Google to Wikipedia in Spanish for the period March 2022-February 2023,
+            compared to the previous year. It only includes visits from Spain.<br>
+            <a href="https://ja.cat/HB6qf" target="_blank">source</a>
+          </small>
+
+          <aside class="notes">
+            Here you can see the same graph for the Spanish Wikipedia.<br><br>
+
+            Note that the steady fall in April 2022 for the Catalan Wikipedia becomes a steady up for the Spanish
+            Wikipedia
+            and continues the rest of the year, except for January 2023.<br><br>
+
+            You can note, also, that both Wikipedias are loosing organic transit from Google every year, which is
+            consistent, apparently, with other Wikipedias. Here the question is that the Spanish is loosing less transit
+            than the Catalan for the same period.
+          </aside>
+        </section>
+      </section>
+
+      <section data-menu-title="Serious implications">
+        <h3>Serious implications</h3>
+        <p class="fragment">90% loss of transit</p>
+        <img src="/custom/imatges/bias-9.png" class="fragment">
+        <aside class="notes">
+          As you can imagine, this has serious financial implications for websites that rely on organic traffic to
+          generate some revenue. In fact, some Catalan websites have reported up to a 90% loss of transit.<br><br>
+          It might even have some legal repercussions as Google is selling ads based on
+          transit filtered by language which, actually, they are not serving.
+        </aside>
+      </section>
+
+
+
+      <section>
+        <section data-menu-title="What have we done?" data-auto-animate>
+          <h3>What have we done?</h3>
+          <div class="fragment">
+            <img src="/custom/imatges/bias-10.png">
+            <p>
+              <small>
+                <a href="https://ja.cat/GbcX5">https://aliançadigital.cat/</a>
+              </small>
+            </p>
+          </div>
+          <aside class="notes">
+            That is the reason for which Catalan society reacted by creating an Alliance, in March 2023, for the digital
+            presence of Catalan language.
+          </aside>
+        </section>
+        <section data-menu-title="Amical is founder" data-auto-animate>
+          <h3>What have we done?</h3>
+          <div>
+            <img src="/custom/imatges/bias-11.jpg">
+          </div>
+          <aside class="notes">
+            Amical Wikimedia is one of the founders of this Alliance, among other private and public Catalan
+            institutions.
+          </aside>
+        </section>
+        <section data-menu-title="Report" data-auto-animate>
+          <h3>What have we done?</h3>
+          <p>Report</p>
+          <aside class="notes">
+            This Alliance created a report of the situation before contacting Google. You can get this report from here.
+          </aside>
+        </section>
+        <section data-menu-title="What does it say?" data-auto-animate>
+          <h3>What does this report say?</h3>
+          <p>Says</p>
+          <aside class="notes">
+
+          </aside>
+        </section>
+        <section data-menu-title="Monitoring" data-auto-animate>
+          <h3>Monitoring system</h3>
+          <div class="fragment">
+            <img src="/custom/imatges/bias-13.jpg">
+            <p>
+              <small><a href="https://monitor.orga.cat/" target="_blank">monitor.orga.cat</a></small>
+            </p>
+          </div>
+          <aside class="notes">
+            The Alliance is working on the creation of a monitoring system to be able to follow this issue over
+            time.<br><br>
+
+            Until then, one of the members of the Alliance has created a web app which does some searches each week
+            and shows what are the languages of the results.
+          </aside>
+        </section>
+      </section>
+
+
+
+      <section data-menu-title="What do we propose?">
+        <h3>What do we propose?</h3>
+        <p class="fragment">Raise awareness.</p>
+        <p class="fragment">Share information and experiences.</p>
+        <p class="fragment">Look for synergies.</p>
+        <p class="fragment">Lobby.</p>
+        <aside class="notes">
+          What is the purpose of this presentation?<br><br>
+
+          First of all, raising awareness of a situation other Wikipedias might be experiencing.<br>
+          Second, we want to share our information and experience, so you find it easier to look into this problem if
+          you have it.<br>
+          Third, look for synergies. We might get better results if we work together, specially when dealing with such
+          big companies.<br>
+          And finally, evaluate the needing of lobbying for the defence of all European languages.
+        </aside>
+      </section>
+
+      <section data-menu-title="Contact us">
+        <h3>Contact us</h3>
+        <p class="fragment">This presentation<br>
+          <small>
+            <a href="https://presentacions.wikimedia.cat/bias.html">wikimedia.cat</a>
+          </small>
+        </p>
+        <p class="fragment">By email<br>
+          <small>
+            presidencia@wikimedia.cat
+          </small>
+        </p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <!--
+        TODO: what have we done? Aliança and report
+        TODO: what do we propose? share information & work together
+
+      -->
+
+      <section data-menu-title="Thank you!">
+        <h3>Thank you!</h3>
+        <p>Questions?</p>
+        <a href="https://wikimedia.cat" target="_blank"><img src="custom/imatges/logo-trans.png"></a>
+        <aside class="notes">
+
+        </aside>
+      </section>
+
+      <!-- plantilla per a una diapo
+      <section data-menu-title="Títol">
+        <h3>Títol</h3>
+        <p class="fragment">Text<br><small><a href="enllaç">enllaç</a></small></p>
+        <aside class="notes">
+
+        </aside>
+      </section>
+    -->
+    </div>
+    <footer id="title-footer" style="background:rgba(0,0,0,0.1)">
+      <a href="index.html">Índex presentacions</a> | <a href="?print-pdf">PDF</a>
+    </footer>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/zoom/zoom.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/search/search.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script src="plugin/menu/menu.js"></script>
+  <script src="plugin/pointer/pointer.js"></script>
+  <script src="plugin/drawer/drawer.js"></script>
+  <script>
+
+    // Also available as an ES module, see:
+    // https://revealjs.com/initialization/
+    Reveal.initialize({
+      pdfSeparateFragments: false,
+      controls: true,
+      progress: true,
+      hash: true,
+      // slideNumber: 'c/t',
+      transitionSpeed: "slow",
+      pointer: {
+        key: "q", // key to enable pointer, default "q", not case-sensitive
+        color: "red", // color of a cursor, default "red" any valid CSS color
+        opacity: 0.8, // opacity of cursor, default 0.8
+        pointerSize: 20, // pointer size in px, default 12
+        alwaysVisible: false, // should pointer mode be always visible? default "false"
+        tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
+      },
+      drawer: {
+        toggleDrawKey: "d", // (optional) key to enable drawing, default "d"
+        toggleBoardKey: "t", // (optional) key to show drawing board, default "t"
+        colors: ["#fa1e0e", "#8ac926", "#1982c4", "#ffca3a"], // (optional) list of colors avaiable (hex color codes)
+        color: "#FF0000", // (optional) color of a cursor, first color from `codes` is a default
+        pathSize: 4, // (optional) path size in px, default 4
+      },
+      menu: {
+        side: 'left',
+        width: 'normal',
+        numbers: false,
+        titleSelector: 'h1, h2, h3, h4, h5, h6',
+        useTextContentForMissingTitles: false,
+        hideMissingTitles: false,
+        markers: true,
+        custom: false,
+        themes: false,
+        themesPath: 'dist/theme/',
+        transitions: false,
+        openButton: true,
+        openSlideNumber: false,
+        keyboard: true,
+        sticky: false,
+        autoOpen: true,
+        delayInit: false,
+        openOnInit: false,
+        loadIcons: true
+      },
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMenu, RevealPointer, RevealDrawer]
+    });
+
+  </script>
+</body>
+
+</html>
