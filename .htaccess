@@ -1,7 +1,7 @@
-<FilesMatch "assemblea.html">
+<FilesMatch "reveal.js/assemblea.html">
   AuthType Basic
   AuthName "Es requereix autentificació"
-  AuthUserFile /home/robert/presentacions/reveal.js/.htpasswd
+  AuthUserFile /home/robert/presentacions/.htpasswd
   Require valid-user
 </FilesMatch>
 error
