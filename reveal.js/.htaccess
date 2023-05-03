@@ -1,6 +1,7 @@
-<Files "assemblea.html">
 AuthType Basic
 AuthName "Es requereix autentificació"
 AuthUserFile /home/robert/presentacions/reveal.js/.htpasswd
+
+<Files "assemblea.html">
 Require valid-user
 </Files>
