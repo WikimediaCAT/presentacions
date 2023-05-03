@@ -4,3 +4,4 @@
   AuthUserFile /home/robert/presentacions/reveal.js/.htpasswd
   Require valid-user
 </FilesMatch>
+error
