@@ -4,3 +4,4 @@
   AuthUserFile /home/robert/presentacions/.htpasswd
   Require valid-user
 </FilesMatch>
+error
